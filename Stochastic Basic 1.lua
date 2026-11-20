@@ -1,12 +1,12 @@
-instrument { name = "Stochastic" }
+instrument { name = "Stochastic Basic 1" }
 
 input_group {
     "%K Line",
-    k_period = input (14, "period", input.integer, 1),
+    k_period = input (10, "period", input.integer, 1),
     smooth = input (3, "smoothing", input.integer, 1),
-
+    
     source = input (1, "source", input.string_selection, inputs.titles),
-
+    
     k_color  = input { default = "#56CEFF", type = input.color },
     k_width  = input { default = 1, type = input.line_width}
 }
@@ -14,7 +14,7 @@ input_group {
 input_group {
     "%D Line",
     d_period = input (3, "period", input.integer, 1),
-
+    
     d_color  = input { default = "#FF7700", type = input.color },
     d_width  = input { default = 1, type = input.line_width}
 }
@@ -23,11 +23,11 @@ input_group {
     "Support Lines",
     overbought = input (80, "overbought", input.double, 1, 100, 1, false),
     oversold = input (20, "oversold", input.double, 1, 100, 1, false),
-
+    
     overbought_color  = input { default = rgba(37,225,84,0.50), type = input.color },
     oversold_color  = input { default = rgba(255,108,88,0.50), type = input.color },
     bg_color  = input { default = rgba(255,255,255,0.05), type = input.color },
-
+    
     support_width  = input { default = 1, type = input.line_width}
 }
 
