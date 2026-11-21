@@ -1,7 +1,7 @@
 --[[
 =====================================================
     FB: facebook.com/Indicator.Arrow
-   :  Stoch Histo (SMI) V1
+   :  Stochastic Histogram (SMI) v1
   website : https://indicatorarrow.vip
 =====================================================
 --]]
